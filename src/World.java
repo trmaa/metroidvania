@@ -19,7 +19,6 @@ public class World {
             for(int j = 0;j < this.width;j++){
                 int n = Utils.redondear(Math.random());
                 this.map[i][j] = n;
-                System.out.print(n);
             }
         }
     }
