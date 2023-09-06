@@ -5,7 +5,7 @@ public class Main {
     public static Canvas cvs = new Canvas();
     public static Ventana ventana = new Ventana();
 
-    public static String scen = "world0";
+    public static World world = new World();
 
     public static void main(String[] args) {
         while (true) {
