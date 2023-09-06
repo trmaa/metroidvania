@@ -21,13 +21,12 @@ public class Canvas extends JPanel {
         super.paintComponent(g);
 
         this.cls(g, new Color(MyMouseListener.mouseClicked ? 0x777777 : 0x000000));
-        for(int i = 0;i < Main.world.height;i++){
-            for(int j = 0;j < Main.world.width;j++){
+        for (int i = 0; i < Main.world.height; i++) {
+            for (int j = 0; j < Main.world.width; j++) {
                 this.print(
-                    g,j*Main.world.celda.width,i*Main.world.celda.height,
-                    Main.world.celda.width,Main.world.celda.height,
-                    Main.world.map[i][j]==1?new Color(0x00bbbb):new Color(0xffffff)
-                );
+                        g, j * Main.world.celda.width, i * Main.world.celda.height,
+                        Main.world.celda.width, Main.world.celda.height,
+                        Main.world.map[i][j] == 1 ? new Color(0x00bbbb) : new Color(0xffff00));
             }
         }
     }
