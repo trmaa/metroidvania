@@ -11,8 +11,8 @@ public class World {
     public World() {
         for (int i = 0; i < this.height; i++) {
             for (int j = 0; j < this.width; j++) {
-                int n = Utils.redondear(Math.random());
-                this.map[i][j] = n;
+                int n = Utils.redondear(Math.random()) * 0;
+                this.map[i][j] = j >= this.height - 5 ? 1 : n;
             }
         }
     }
