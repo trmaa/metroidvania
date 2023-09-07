@@ -26,7 +26,7 @@ public class Canvas extends JPanel {
                 this.print(
                         g, j * Main.world.celda.width, i * Main.world.celda.height,
                         Main.world.celda.width, Main.world.celda.height,
-                        Main.world.map[i][j] == 1 ? new Color(0x00bbbb) : new Color(0xffff00));
+                        Main.world.map[i][j] == 1 ? new Color(0x00aabb) : new Color(0xffff00));
             }
         }
     }
