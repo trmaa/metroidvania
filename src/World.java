@@ -1,8 +1,8 @@
 package src;
 
 public class World {
-    public int width = 100;
-    public int height = 100;
+    public int width = 16;
+    public int height = 16;
 
     public int[][] map = new int[this.height][this.width];
 

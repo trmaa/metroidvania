@@ -24,6 +24,9 @@ public class Main {
     public static void loop() {
         Main.iter++;
         Main.cvs.repaint();
-        // Main.cvs.setSize(Main.ventana.getWidth(), Main.ventana.getHeight());
+        Main.cvs.setSize(Main.ventana.getWidth(), Main.ventana.getHeight());
+
+        Main.world.celda.width = Main.cvs.getWidth() / Main.world.width;
+        Main.world.celda.height = Main.cvs.getHeight() / Main.world.height;
     }
 }
